@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    background-color: aquamarine;
+    padding: 1rem;
+    font-size: 2rem;
+    border-bottom: 2px solid #333;
+}
+
+main {
+    display: flex;
+    min-height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+aside {
+    width: 20%;
+    padding: 1.5rem;
+    background-color: rgb(238, 217, 217);
+}
+aside button {
+    background-color: inherit;
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: calc(infinity * 1px);
+    font-size: 1rem;
+    transition: background-color 0.3s ease-in-out;
+}
+aside button:hover {
+    background-color: rgb(185, 214, 185);
+}
+aside > button {
+    margin-block: 1rem;
+}
+aside ul li {
+    list-style-type: none;
+}
+#projectList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.active {
+    background-color: rgb(144, 218, 166);
+    pointer-events: none;
+}
+.container {
+    width: 80%;
+    padding: 1.5rem;
+}
+.newTask {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.newTask button {
+    background-color: rgb(192, 236, 205);
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: calc(infinity * 1px);
+    font-size: 1rem;
+}
+.tasks {
+    margin-top: 20px;
+    background-color: #c9bdbd;
+    min-height: 60vh;
+    border-radius: 10px;
+    padding-block: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.task {
+    padding-left: 2rem;
+}
+.task p {
+    opacity: 0.6;
+}
+
+.modalContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(36, 34, 34, 0.2);
+    z-index: 100;
+}
+.modalContent {
+    margin: 15% auto;
+    width: 25%;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 1.5rem;
+}
+.modalContent form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.modalContent input {
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+}
+.modalContent button {
+    background-color: greenyellow;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: calc(infinity * 1px);
+    font-size: 1rem;
+    width: 50%;
+}
+.modalContent textarea {
+    resize: none;
+    padding: 0.5rem;
+}
+.modalContent select {
+    padding: 0.3rem 1rem;
+}
